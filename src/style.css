@@ -1,0 +1,84 @@
+:root {
+    --cor-verde-neon: rgb(20, 219, 20);
+    --cor-preto-meioCinza: rgb(40, 40, 40);
+}
+
+body {
+    background-color: var(--cor-preto-meioCinza);
+    margin: 0;
+}
+
+header {
+    background-color: var(--cor-verde-neon);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-preto-meioCinza);
+    height: 500px;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: solid;
+}
+
+.btnsCaixa {
+    color: white;
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    width: 500px;
+    height: 200px;
+    border: solid;
+}
+
+.btnResposta {
+    font-size: 15px;
+}
+
+header {
+    background-color: var(--cor-verde-neon);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.caixaBtnInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.btnInicio {
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    background-color: var(--cor-verde-neon);
+    font-size: 40px;
+}
+
+.btnInicio:hover {
+    background-color: rgb(115, 221, 115);
+}
+
+button:hover {
+    cursor: pointer;
+}

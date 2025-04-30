@@ -27,6 +27,27 @@ const listaPerguntas = [
         terceiraAlternativa: "Morty",
         quartaAlternativa: "Jerry"  
     },
+    {
+        pergunta: "Verdadeiro ou falso: Rick já se transformou em um picles para evitar uma sessão de terapia.",
+        primeiraAlternativa: "Verdadeiro",
+        segundaAlternativa: "Falso",
+        terceiraAlternativa: "Ele virou um rato",
+        quartaAlternativa: "Foi Morty quem fez isso"  
+    },
+    {
+        pergunta: "Qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?",
+        primeiraAlternativa: "Mr. PoopybuttholeQ",
+        segundaAlternativa: "Birdperson",
+        terceiraAlternativa: "Tammy",
+        quartaAlternativa: "Squanchy" 
+    },
+    {
+        pergunta: "Qual é o nome do cientista maluco protagonista da série?",
+        primeiraAlternativa: "Morty",
+        segundaAlternativa: "Rick",
+        terceiraAlternativa: "Jerry",
+        quartaAlternativa: "Summer" 
+    },
 ]
 // Quem transformou a Terra em um planeta governado por insetos gigantes?
 // A) Summer
@@ -70,8 +91,8 @@ const listaPerguntas = [
 // C) Ele virou um rato
 // D) Foi Morty quem fez isso
 // Resposta certa: A) Verdadeiro
-// 6. Qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?
-// A) Mr. Poopybutthole
+// 6. qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?
+// A) Mr. PoopybuttholeQ
 // B) Birdperson
 // C) Tammy
 // D) Squanchy

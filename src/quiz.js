@@ -1,52 +1,66 @@
 const listaPerguntas = [
     {
         pergunta: "Quem transformou a Terra em um planeta governado por insetos gigantes?",
-        primeiraAlternativa: "Summer",
-        segundaAlternativa: "Rick",
-        terceiraAlternativa: "Jerry",
-        quartaAlternativa: "Morty"
+        alternativas: [
+       {primeiraAlternativa: "Summer"},
+        {segundaAlternativa: "Rick"},
+        {terceiraAlternativa: "Jerry"},
+        {quartaAlternativa: "Morty"}
+        ]
     },
     {
         pergunta: "Verdadeiro ou falso: Morty já teve um relacionamento com um robô.",
-        primeiraAlternativa: "Verdadeiro",
-        segundaAlternativa: "Falso",
-        terceiraAlternativa: "Não mostrado na série",
-        quartaAlternativa: "Foi Rick, não Morty"
+        alternativas: [
+       {primeiraAlternativa: "Verdadeiro"},
+        {segundaAlternativa: "Falso"},
+        {terceiraAlternativa: "Não mostrado na série"},
+        {quartaAlternativa: "Foi Rick, não Morty"}
+        ]
     },
     {
         pergunta: "Qual personagem teve um surto existencial após descobrir que era um clone",
-        primeiraAlternativa: "Beth",
-        segundaAlternativa: "Summer",
-        terceiraAlternativa: "Morty",
-        quartaAlternativa: "Tammy"
+        alternativas: [
+        {primeiraAlternativa: "Beth"},
+        {segundaAlternativa: "Summer"},
+        {terceiraAlternativa: "Morty"},
+        {quartaAlternativa: "Tammy"}
+        ]
     },
     {
         pergunta: "Quem explodiu a casa da família Smith logo no primeiro episódio?",
-        primeiraAlternativa: " Rick",
-        segundaAlternativa: "Um alienígena",
-        terceiraAlternativa: "Morty",
-        quartaAlternativa: "Jerry"  
+        alternativas: [
+        {primeiraAlternativa: " Rick"},
+        {segundaAlternativa: "Um alienígena"},
+        {terceiraAlternativa: "Morty"},
+        {quartaAlternativa: "Jerry"}  
+        ]
     },
     {
         pergunta: "Verdadeiro ou falso: Rick já se transformou em um picles para evitar uma sessão de terapia.",
-        primeiraAlternativa: "Verdadeiro",
-        segundaAlternativa: "Falso",
-        terceiraAlternativa: "Ele virou um rato",
-        quartaAlternativa: "Foi Morty quem fez isso"  
+        alternativas: [
+        {primeiraAlternativa: "Verdadeiro"},
+        {segundaAlternativa: "Falso"},
+        {terceiraAlternativa: "Ele virou um rato"},
+        {quartaAlternativa: "Foi Morty quem fez isso"},
+        ]  
     },
     {
         pergunta: "Qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?",
-        primeiraAlternativa: "Mr. PoopybuttholeQ",
-        segundaAlternativa: "Birdperson",
-        terceiraAlternativa: "Tammy",
-        quartaAlternativa: "Squanchy" 
+        alternativas: [
+        {primeiraAlternativa: "Mr. PoopybuttholeQ"},
+        {segundaAlternativa: "Birdperson"},
+        {terceiraAlternativa: "Tammy"},
+        {quartaAlternativa: "Squanchy"}, 
+        ]
     },
     {
         pergunta: "Qual é o nome do cientista maluco protagonista da série?",
-        primeiraAlternativa: "Morty",
-        segundaAlternativa: "Rick",
-        terceiraAlternativa: "Jerry",
-        quartaAlternativa: "Summer" 
+        alternativas: [
+        {primeiraAlternativa: "Morty"},
+        {segundaAlternativa: "Rick"},
+        {terceiraAlternativa: "Jerry"},
+       {quartaAlternativa: "Summer"}
+        ]
     },
 ]
 // Quem transformou a Terra em um planeta governado por insetos gigantes?

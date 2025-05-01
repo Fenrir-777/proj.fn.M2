@@ -1,10 +1,10 @@
 :root {
     --cor-verde-neon: rgba(46, 223, 84, 0.856);
-    --cor-preto-meioCinza: rgb(40, 40, 40);
+    --cor-preto: rgb(0, 0, 0);
 }
 
 body {
-    background-color: var(--cor-preto-meioCinza);
+    background-color: var(--cor-preto);
     margin: 0;
     
 }
@@ -96,3 +96,4 @@ button:hover {
     background-color: rgba(112, 214, 108, 0.945);
    
 }
+ 

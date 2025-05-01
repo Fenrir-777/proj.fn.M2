@@ -1,11 +1,12 @@
 :root {
-    --cor-verde-neon: rgb(20, 219, 20);
+    --cor-verde-neon: rgba(46, 223, 84, 0.856);
     --cor-preto-meioCinza: rgb(40, 40, 40);
 }
 
 body {
     background-color: var(--cor-preto-meioCinza);
     margin: 0;
+    
 }
 
 header {
@@ -39,10 +40,16 @@ header {
     width: 500px;
     height: 200px;
     border: solid;
+    
+    
 }
 
 .btnResposta {
     font-size: 15px;
+    background-color: var(--cor-verde-neon);
+    border-radius: 10px;
+    border-bottom: 5px;
+    
 }
 
 header {
@@ -73,12 +80,19 @@ h3 {
     width: 400px;
     background-color: var(--cor-verde-neon);
     font-size: 40px;
+    border-radius: 10px;
+    border-bottom: 5px;
 }
 
 .btnInicio:hover {
-    background-color: rgb(115, 221, 115);
+    background-color: rgba(112, 214, 108, 0.945);
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.btnResposta:hover{
+    background-color: rgba(112, 214, 108, 0.945);
+   
 }

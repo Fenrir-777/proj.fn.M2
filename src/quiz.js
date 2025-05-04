@@ -1,125 +1,121 @@
-const listaPerguntas = [
+const questions = [
     {
-        pergunta: "Quem transformou a Terra em um planeta governado por insetos gigantes?",
-        alternativas: [
-            { texto: "Summer", correto: false },
-            { texto: "Rick", correto: true },
-            { texto: "Jerry", correto: false },
-            { texto: "Morty", correto: false }
+        question: "Quem transformou a Terra em um planeta governado por insetos gigantes?",
+        answers: [
+            { id: 1, text: "A) Summer", correct: false },
+            { id: 2, text: "B) Rick", correct: true },
+            { id: 3, text: "C) Jerry", correct: false },
+            { id: 4, text: "D) Morty", correct: false },
         ]
     },
     {
-        pergunta: "Verdadeiro ou falso: Morty já teve um relacionamento com um robô.",
-        alternativas: [
-            { texto: "Verdadeiro", correto: true },
-            { texto: "Falso", correto: false },
-            { texto: "Não mostrado na série", correto: false },
-            { texto: "Foi Rick, não Morty", correto: false }
+        question: "Verdadeiro ou falso: Morty já teve um relacionamento com um robô.",
+        answers: [
+            { id: 1, text: "A) Verdadeiro", correct: true },
+            { id: 2, text: "B) Falso", correct: false },
+            { id: 3, text: "C) Não mostrado na série", correct: false },
+            { id: 4, text: "D) Foi Rick, não Morty", correct: false },
         ]
     },
     {
-        pergunta: "Qual personagem teve um surto existencial após descobrir que era um clone?",
-        alternativas: [
-            { texto: "Beth", correto: true },
-            { texto: "Summer", correto: false },
-            { texto: "Morty", correto: false },
-            { texto: "Tammy", correto: false }
+        question: "Qual personagem teve um surto existencial após descobrir que era um clone?",
+        answers: [
+            { id: 1, text: "A) Beth", correct: true },
+            { id: 2, text: "B) Summer", correct: false },
+            { id: 3, text: "C) Morty", correct: false },
+            { id: 4, text: "D) Tammy", correct: false },
         ]
     },
     {
-        pergunta: "Quem explodiu a casa da família Smith logo no primeiro episódio?",
-        alternativas: [
-            { texto: "Rick", correto: true },
-            { texto: "Um alienígena", correto: false },
-            { texto: "Morty", correto: false },
-            { texto: "Jerry", correto: false }
+        question: "Quem explodiu a casa da família Smith logo no primeiro episódio?",
+        answers: [
+            { id: 1, text: "A) Rick", correct: true },
+            { id: 2, text: "B) Um alienígena", correct: false },
+            { id: 3, text: "C) Morty", correct: false },
+            { id: 4, text: "D) Jerry", correct: false },
         ]
     },
     {
-        pergunta: "Verdadeiro ou falso: Rick já se transformou em um picles para evitar uma sessão de terapia.",
-        alternativas: [
-            { texto: "Verdadeiro", correto: true },
-            { texto: "Falso", correto: false },
-            { texto: "Ele virou um rato", correto: false },
-            { texto: "Foi Morty quem fez isso", correto: false }
+        question: "Verdadeiro ou falso: Rick já se transformou em um picles para evitar uma sessão de terapia.",
+        answers: [
+            { id: 1, text: "A) Verdadeiro", correct: true },
+            { id: 2, text: "B) Falso", correct: false },
+            { id: 3, text: "C) Ele virou um rato", correct: false },
+            { id: 4, text: "D) Foi Morty quem fez isso", correct: false },
         ]
     },
     {
-        pergunta: "Qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?",
-        alternativas: [
-            { texto: "Mr. Poopybutthole", correto: false },
-            { texto: "Birdperson", correto: false },
-            { texto: "Tammy", correto: true },
-            { texto: "Squanchy", correto: false }
+        question: "Qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?",
+        answers: [
+            { id: 1, text: "A) Mr. Poopybutthole", correct: false },
+            { id: 2, text: "B) Birdperson", correct: false },
+            { id: 3, text: "C) Tammy", correct: true },
+            { id: 4, text: "D) Squanchy", correct: false },
         ]
     },
     {
-        pergunta: "Qual é o nome do cientista maluco protagonista da série?",
-        alternativas: [
-            { texto: "Morty", correto: false },
-            { texto: "Rick", correto: true },
-            { texto: "Jerry", correto: false },
-            { texto: "Summer", correto: false }
+        question: "Qual é o nome do cientista maluco protagonista da série?",
+        answers: [
+            { id: 1, text: "A) Morty", correct: false },
+            { id: 2, text: "B) Rick", correct: true },
+            { id: 3, text: "C) Jerry", correct: false },
+            { id: 4, text: "D) Summer", correct: false },
         ]
-    }
-    
+    },
 ];
-// Quem transformou a Terra em um planeta governado por insetos gigantes?
-// A) Summer
-// B) Rick
-// C) Jerry
-// D) Morty
-// Resposta certa: B) Rick
 
-// ⸻
+const questionElement = document.querySelector(".pergunta");
+const answerButtons = document.querySelectorAll(".btnResposta");
 
-// 2. Verdadeiro ou falso: Morty já teve um relacionamento com um robô.
-// A) Verdadeiro
-// B) Falso
-// C) Não mostrado na série
-// D) Foi Rick, não Morty
-// Resposta certa: A) Verdadeiro
+let currentQuestionIndex = 0;
+let score = 0;
 
-// ⸻
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    showQuestion();
+}
 
-// 3. Qual personagem teve um surto existencial após descobrir que era um clone?
-// A) Beth
-// B) Summer
-// C) Morty
-// D) Tammy
-// Resposta certa: A) Beth
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = (currentQuestionIndex + 1) + ". " + currentQuestion.question;
 
-// ⸻
+    currentQuestion.answers.forEach((answer, index) => {
+        const btn = answerButtons[index];
+        btn.textContent = answer.text;
+        btn.classList.remove("correct", "incorrect");
+        btn.disabled = false;
+        btn.onclick = () => selectAnswer(answer, btn);
+    });
+}
 
-// 4. Quem explodiu a casa da família Smith logo no primeiro episódio?
-// A) Rick
-// B) Um alienígena
-// C) Morty
-// D) Jerry
-// Resposta certa: A) Rick
+function selectAnswer(answer, button) {
+    const isCorrect = answer.correct;
+    if (isCorrect) {
+        button.classList.add("correct");
+        score++;
+    } else {
+        button.classList.add("incorrect");
+    }
 
-// ⸻
+    // Desativar todos os botões
+    answerButtons.forEach(btn => btn.disabled = true);
 
-// 5. Verdadeiro ou falso: Rick já se transformou em um picles para evitar uma sessão de terapia.
-// A) Verdadeiro
-// B) Falso
-// C) Ele virou um rato
-// D) Foi Morty quem fez isso
-// Resposta certa: A) Verdadeiro
-// 6. qual desses personagens foi revelado ser um agente secreto da Federação Galáctica?
-// A) Mr. PoopybuttholeQ
-// B) Birdperson
-// C) Tammy
-// D) Squanchy
-// Resposta certa: C) Tammy
-// 7. Qual é o nome do cientista maluco protagonista da série?
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            showQuestion();
+        } else {
+            showScore();
+        }
+    }, 1000);
+}
 
-// a) Morty
+function showScore() {
+    questionElement.textContent = `Você acertou ${score} de ${questions.length}!`;
+    answerButtons.forEach(btn => {
+        btn.style.display = "none";
+    });
+}
 
-// b) Rick
-
-// c) Jerry
-
-// d) Summer
-// Resposta: b) Rick
-
+startQuiz();

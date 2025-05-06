@@ -62,6 +62,24 @@ const questions = [
             { id: 4, text: "D) Summer", correct: false },
         ]
     },
+    {
+        question: "Qual é o nome do robô que Rick constrói apenas para passar manteiga?",
+        answers: [
+            { id: 1, text: "A) Butterdroid", correct: false },
+            { id: 2, text: "B) Gearhead", correct: false },
+            { id: 3, text: "C) Butter Robot", correct: true },
+            { id: 4, text: "D) Sauce Bot", correct: false },
+        ]
+    },
+    {
+        question: "Qual é o número da dimensão original de Rick e Morty?",
+        answers: [
+            { id: 1, text: "A) C-123", correct: false },
+            { id: 2, text: "B) R-301", correct: false },
+            { id: 3, text: "C) M-007", correct: false },
+            { id: 4, text: "D) C-137", correct: true },
+        ]
+    }
 ];
 
 const questionElement = document.querySelector(".pergunta");

@@ -1,11 +1,9 @@
 function nomePagina() {
-    const nome=
-    document.getElementByld("nome");
-    let nomeUsuario=
-    prompt("Digite seu nome");
-    nome.innerText= `Seja bem vindo ${nomeUsuario}`;
+    const nome = document.getElementByld("nome");
+    let nomeUsuario = prompt("Digite seu nome");
+    nome.innerText = `Seja bem vindo ${nomeUsuario}`;
 }
-nomePagina()
+nomePagina();
 
 
 function trocarQuiz() {
@@ -14,5 +12,4 @@ function trocarQuiz() {
         window.location.href = "quiz.html";
     });
 }
-
 trocarQuiz();

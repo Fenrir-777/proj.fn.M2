@@ -62,6 +62,15 @@ const questions = [
             { id: 4, text: "D) Summer", correct: false },
         ]
     },
+    {
+        question: "Qual é o nome do robô que Rick constrói apenas para passar manteiga?",
+            answers: [
+                { id: 1, text: "A) Butterdroid", correct: false },
+                { id: 2, text: "B) Gearhead", correct: false },
+                { id: 3, text: "C) Butter Robot", correct: true },
+                { id: 4, text: "D) Sauce Bot", correct: false },
+            ]
+        },
 ];
 
 const questionElement = document.querySelector(".pergunta");

@@ -1,12 +1,13 @@
+
 :root {
     --cor-verde-neon: rgba(46, 223, 84, 0.856);
     --cor-preto: rgb(0, 0, 0);
+    --cor-preto-meioCinza: #1e1e1e; /* SUGESTÃO - você pode ajustar essa cor */
 }
 
 body {
     background-color: var(--cor-preto);
     margin: 0;
-    
 }
 
 header {
@@ -40,8 +41,6 @@ header {
     width: 1000px;
     height: 200px;
     border: solid;
-    
-    
 }
 
 .btnResposta {
@@ -49,15 +48,6 @@ header {
     background-color: var(--cor-verde-neon);
     border-radius: 10px;
     border-bottom: 5px;
-    
-}
-
-header {
-    background-color: var(--cor-verde-neon);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h3 {
@@ -80,7 +70,6 @@ h3 {
     width: 400px;
     background-color: var(--cor-verde-neon);
     font-size: 40px;
-    border-radius: 10px;
     border-bottom: 5px;
 }
 
@@ -92,19 +81,21 @@ button:hover {
     cursor: pointer;
 }
 
-.btnResposta:hover{
+.btnResposta:hover {
     background-color: rgba(112, 214, 108, 0.945);
-   
 }
-img{
+
+img {
     height: 250px;
 }
-.img1{
+
+.img1 {
     display: flex;
     justify-content: center;
     padding: 50px;
 }
-.caixaNome{
+
+.caixaNome {
     color: white;
     display: flex;
     justify-content: center;

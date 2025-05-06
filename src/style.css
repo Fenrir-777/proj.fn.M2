@@ -38,7 +38,7 @@ header {
     display: grid;
     padding: 10px;
     gap: 10px;
-    width: 500px;
+    width: 1000px;
     height: 200px;
     border: solid;
 }
@@ -59,7 +59,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 200px;
     flex-direction: column;
 }
 

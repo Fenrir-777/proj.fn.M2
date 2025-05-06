@@ -96,4 +96,16 @@ button:hover {
     background-color: rgba(112, 214, 108, 0.945);
    
 }
- 
+img{
+    height: 250px;
+}
+.img1{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.caixaNome{
+    color: white;
+    display: flex;
+    justify-content: center;
+}

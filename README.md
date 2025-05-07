@@ -12,8 +12,8 @@ Bárbara ✏️ <br>
 Beatriz ✏️ <br>
 João Vitor ✏️ <br>
 
-![image](https://github.com/user-attachments/assets/c7d17c14-903d-4e4d-bb17-6aec3afeadf2) <br>
-![image](https://github.com/user-attachments/assets/a197d2c1-e14c-4159-9578-068887dd5ebd) <br>
+![image](https://github.com/user-attachments/assets/c2871910-2648-4fa0-8ef1-f05be1955c4f) <br>
+![image](https://github.com/user-attachments/assets/8dbfad52-c344-4e5d-a1d9-13374377e236) <br>
 
 Feito com: <br>
 🎯 HTML <br>

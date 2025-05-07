@@ -1,12 +1,11 @@
 
 :root {
     --cor-verde-neon: rgba(46, 223, 84, 0.856);
-    --cor-preto: rgb(0, 0, 0);
     --cor-preto-meioCinza: #1e1e1e; /* SUGESTÃO - você pode ajustar essa cor */
 }
 
 body {
-    background-color: var(--cor-preto);
+    background-color: var(--cor-preto-meioCinza);
     margin: 0;
 }
 
@@ -38,7 +37,7 @@ header {
     display: grid;
     padding: 10px;
     gap: 10px;
-    width: 500px;
+    width: 1000px;
     height: 200px;
     border: solid;
 }
@@ -59,7 +58,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 300px;
     flex-direction: column;
 }
 
@@ -79,6 +78,8 @@ h3 {
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 300ms ease;
 }
 
 .btnResposta:hover {
@@ -127,7 +128,7 @@ img {
     }
 
     .btnInicio {
-        width: 90px;
+        width: 300px;
         height: 80px;
         font-size: 30px;
     }

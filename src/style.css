@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: var(--cor-preto-meioCinza);
+    background-color: var(--cor-preto);
     margin: 0;
 }
 
@@ -38,7 +38,7 @@ header {
     display: grid;
     padding: 10px;
     gap: 10px;
-    width: 1000px;
+    width: 500px;
     height: 200px;
     border: solid;
 }
@@ -47,7 +47,7 @@ header {
     font-size: 15px;
     background-color: var(--cor-verde-neon);
     border-radius: 10px;
-    border-bottom: 5px;
+    border-bottom: 5px solid transparent; /* corrigido */
 }
 
 h3 {
@@ -59,7 +59,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 500px;
     flex-direction: column;
 }
 
@@ -70,7 +70,7 @@ h3 {
     width: 400px;
     background-color: var(--cor-verde-neon);
     font-size: 40px;
-    border-bottom: 5px;
+    border-bottom: 5px solid transparent; /* corrigido */
 }
 
 .btnInicio:hover {
@@ -99,4 +99,46 @@ img {
     color: white;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    header h1,
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .caixa,
+    .caixaBtnInicio {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .btnsCaixa {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .btnResposta {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btnInicio {
+        width: 90px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .btnsCaixa {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -11,6 +11,7 @@ Davi ✏️ <br>
 Bárbara ✏️ <br>
 Beatriz ✏️ <br>
 João Vitor ✏️ <br>
+João Miguel ✏️ <br>
 
 ![image](https://github.com/user-attachments/assets/c2871910-2648-4fa0-8ef1-f05be1955c4f) <br>
 ![image](https://github.com/user-attachments/assets/8dbfad52-c344-4e5d-a1d9-13374377e236) <br>
